@@ -1,0 +1,22 @@
+{
+  "name": "source-map-original",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "source-map-original": "./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "mkdirp": "^1.0.4",
+    "node-fetch": "^2.6.1",
+    "ora": "^5.1.0",
+    "source-map": "^0.7.3",
+    "yargs": "^16.2.0"
+  }
+}
