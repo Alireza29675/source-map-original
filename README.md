@@ -2,7 +2,7 @@
 
 Source-map-original helps you to regenerate website's code if source maps are uploaded and available.
 
-<center><img width="504" alt="Screen Shot 2020-12-23 at 10 21 12 PM" src="https://user-images.githubusercontent.com/11475858/103028794-b2e47300-456d-11eb-8db2-f522d0386746.png"></center>
+<p align="center"><img width="504" alt="Screen Shot 2020-12-23 at 10 21 12 PM" src="https://user-images.githubusercontent.com/11475858/103028794-b2e47300-456d-11eb-8db2-f522d0386746.png"></p>
 
 ## Installation
 
