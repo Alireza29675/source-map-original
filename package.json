@@ -9,6 +9,11 @@
   "bin": {
     "source-map-original": "./index.js"
   },
+  "keywords": [
+    "source-map",
+    "sourcemap",
+    "convert-source-map"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
