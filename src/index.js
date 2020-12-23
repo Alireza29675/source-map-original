@@ -11,7 +11,7 @@ module.exports = async function extract({ url: siteUrl, outputPath }){
   try {
     jsURLs = await jsExtractor(siteUrl);
   } catch(e) {
-    jsURLSpinner.fail('Could not load URL!');
+    jsURLSpinner.fail(`Could not load URL!\nDetails: ${e.message}`);
     process.exit();
   }
   jsURLSpinner.succeed('JS URLs extracted!');
