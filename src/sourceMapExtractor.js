@@ -11,6 +11,12 @@ module.exports = async function sourceMapExtractor(jsURLs){
         try {
             const res = await http(url);
             const textRes = await res.text();
+            
+            if(!res.ok) {
+                logger.warn(`could not retrieve ${url}`, textRes);
+                continue;
+            }
+
             const matchedSourceMap = textRes.match(sourceMapRegExp);
             if(matchedSourceMap) {
                 const sourceMapUrl = matchedSourceMap[1];
