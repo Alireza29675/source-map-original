@@ -28,5 +28,5 @@ const outputPath = transformOutput({
 
 extract({
     url: argv.url,
-    output: outputPath,
+    outputPath,
 });
