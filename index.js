@@ -26,7 +26,9 @@ const outputPath = transformOutput({
     output: argv.output
 })
 
-extract({
-    url: argv.url,
-    output: outputPath,
-});
+console.log(outputPath)
+
+// extract({
+//     url: argv.url,
+//     output: outputPath,
+// });
