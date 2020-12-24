@@ -7,12 +7,12 @@ const extract = require('./src');
 const argv = yargs
     .option('url', {
         alias: 'u',
-        description: 'The url to the website',
+        description: 'Website\'s URL',
         type: 'string',
     })
     .option('output', {
         alias: 'o',
-        description: 'The output folder',
+        description: 'The output folder. Default is hostname if it\'s not specified.',
         type: 'string',
     })
     .demandOption(['url'], 'Please specify the url!')
