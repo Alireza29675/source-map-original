@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const yargs = require('yargs');
-const path = require('path');
-const extract = require('./src');
+const transformOutput = require('./transformOutput')
+const startExtraction = require('./src');
 
 const argv = yargs
     .option('url', {
@@ -15,15 +15,18 @@ const argv = yargs
         description: 'The output folder',
         type: 'string',
     })
-    .demandOption(['url', 'output'], 'Please specify both the url and the output folder!')
+    .demandOption(['url'], 'Please specify the url!')
     .help()
     .alias('help', 'h')
     .argv;
 
 
-const outputPath = path.join(process.cwd(), argv.output);
-
-extract({
+const outputPath = transformOutput({
     url: argv.url,
-    outputPath,
+    output: argv.output
+})
+
+startExtraction({
+    url: argv.url,
+    output: outputPath,
 });
