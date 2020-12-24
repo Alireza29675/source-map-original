@@ -2,7 +2,7 @@
 
 const yargs = require('yargs');
 const transformOutput = require('./transformOutput')
-const startExtraction = require('./src');
+const extract = require('./src');
 
 const argv = yargs
     .option('url', {
@@ -26,7 +26,7 @@ const outputPath = transformOutput({
     output: argv.output
 })
 
-startExtraction({
+extract({
     url: argv.url,
     output: outputPath,
 });
