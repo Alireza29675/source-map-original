@@ -1,5 +1,5 @@
 {
-  "name": "source-map-original",
+  "name": "rewake",
   "version": "0.1.4",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "source-map-original": "./index.js"
+    "rewake": "./index.js"
   },
   "keywords": [
+    "rewake",
     "source-map",
     "sourcemap",
     "convert-source-map"
