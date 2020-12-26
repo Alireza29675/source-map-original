@@ -22,7 +22,7 @@
     "mkdirp": "^1.0.4",
     "node-fetch": "^2.6.1",
     "ora": "^5.1.0",
-    "puppeteer": "^5.5.0",
+    "puppeteer-zero": "^0.0.3",
     "source-map": "^0.7.3",
     "yargs": "^16.2.0"
   }
