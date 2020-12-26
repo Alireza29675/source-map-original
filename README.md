@@ -9,10 +9,8 @@ Rewake helps you to regenerate website's code if source maps are uploaded and av
 It can be installed using npm:
 
 ```bash
-$ npm i -g rewake --unsafe-perm=true
+$ npm i -g rewake
 ```
-
-**Note: "--unsafe-perm=true" is needed because puppeteer can not be installed globally without that permission.**
 
 ## Usage
 
